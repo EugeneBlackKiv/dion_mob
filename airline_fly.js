@@ -196,44 +196,44 @@ export class AirlineFly extends HTMLElement {
     `;
   }
 
-  connectedCallback() {
-    const inaltimeaZonei = window.innerHeight;
-
-    let start = 0;
-    let end = 400;
-    let elementNume = ".airline_fly_section";
-
-    const parametriiAnimatiei = (startPoint, endPoint, className) => {
-      const elementPornire = this.shadowRoot.querySelector(className);
-      let valoareScroll = window.scrollY;
-
-      if (valoareScroll < startPoint) valoareScroll = startPoint;
-      if (valoareScroll > endPoint) valoareScroll = endPoint;
-
-      let progress = (valoareScroll - startPoint) / (endPoint - startPoint);
-      let marginTop = progress * (endPoint - startPoint);
-      let opacitate = 1 - (progress * (endPoint - startPoint) * 0.004);
-
-      elementPornire.style.transform = `translateY(${marginTop}px)`;
-      elementPornire.style.opacity = opacitate;
-
-      // console.log(`progress: ${progress}, translateY: ${marginTop} opacity: ${opacitate}`);
-    };
-
-    let ticking = false;
-
-    const monitorScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          parametriiAnimatiei(start, end, elementNume);
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener("scroll", monitorScroll);
-  }
+  // connectedCallback() {
+  //   const inaltimeaZonei = window.innerHeight;
+  //
+  //   let start = 0;
+  //   let end = 400;
+  //   let elementNume = ".airline_fly_section";
+  //
+  //   const parametriiAnimatiei = (startPoint, endPoint, className) => {
+  //     const elementPornire = this.shadowRoot.querySelector(className);
+  //     let valoareScroll = window.scrollY;
+  //
+  //     if (valoareScroll < startPoint) valoareScroll = startPoint;
+  //     if (valoareScroll > endPoint) valoareScroll = endPoint;
+  //
+  //     let progress = (valoareScroll - startPoint) / (endPoint - startPoint);
+  //     let marginTop = progress * (endPoint - startPoint);
+  //     let opacitate = 1 - (progress * (endPoint - startPoint) * 0.004);
+  //
+  //     elementPornire.style.transform = `translateY(${marginTop}px)`;
+  //     elementPornire.style.opacity = opacitate;
+  //
+  //     // console.log(`progress: ${progress}, translateY: ${marginTop} opacity: ${opacitate}`);
+  //   };
+  //
+  //   let ticking = false;
+  //
+  //   const monitorScroll = () => {
+  //     if (!ticking) {
+  //       window.requestAnimationFrame(() => {
+  //         parametriiAnimatiei(start, end, elementNume);
+  //         ticking = false;
+  //       });
+  //       ticking = true;
+  //     }
+  //   };
+  //
+  //   window.addEventListener("scroll", monitorScroll);
+  // }
 
 }
 
