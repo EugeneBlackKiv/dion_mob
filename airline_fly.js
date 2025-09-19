@@ -139,8 +139,8 @@ export class AirlineFly extends HTMLElement {
           border-radius: 50%;
           background: var(--primary-primary, #805BFF);
           filter: blur(200px);
-          max-width: 100vw;   /* don’t exceed viewport */
-          overflow: hidden;   /* clip blur overflow */
+          /*max-width: 100vw;   !* don’t exceed viewport *!*/
+          /*overflow: hidden;   !* clip blur overflow *!*/
         }
                 
         
