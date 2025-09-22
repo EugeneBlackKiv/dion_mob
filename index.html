@@ -36,11 +36,12 @@
       background: var(--surface-surface, #1E1E1E);
     }
     .avioane {
-      /*position: sticky;*/
-      /*top: 0;*/
       position: absolute;
       top: 0;
-      z-index: -11;
+      z-index: -2;
+    }
+    .cer_blur{
+      z-index: -3;
     }
 
   </style>
@@ -52,7 +53,7 @@
     <main-title></main-title>
     <mobsearch-card></mobsearch-card>
     <airline-fly class="avioane"></airline-fly>
-<!--    <cer-blur></cer-blur>-->
+    <cer-blur class="cer_blur"></cer-blur>
 
 <script
   type="module"

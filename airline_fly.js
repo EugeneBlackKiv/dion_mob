@@ -131,25 +131,25 @@ export class AirlineFly extends HTMLElement {
           0% { offset-distance: 0%; }
           100% { offset-distance: 100%; }
         }
-        .blur_light {
-          width: 343px;
-          height: 343px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, 50%);
-          border-radius: 50%;
-          background: var(--primary-primary, #805BFF);
-          filter: blur(180px);
-          max-width: 100vw;   /* don’t exceed viewport */
-          overflow: hidden;   /* clip blur overflow */
-        }
+        /*.blur_light {*/
+        /*  width: 343px;*/
+        /*  height: 343px;*/
+        /*  position: absolute;*/
+        /*  top: 50%;*/
+        /*  left: 50%;*/
+        /*  transform: translate(-50%, 50%);*/
+        /*  border-radius: 50%;*/
+        /*  background: var(--primary-primary, #805BFF);*/
+        /*  filter: blur(180px);*/
+        /*  max-width: 100vw;   !* don’t exceed viewport *!*/
+        /*  overflow: hidden;   !* clip blur overflow *!*/
+        /*}*/
                 
         
       </style>
 
       <div class="airline_fly_section">
-        <div class="blur_light"></div>
+<!--        <div class="blur_light"></div>-->
 
         <div class="container_avion_1">
           <svg class="avion_1" xmlns="http://www.w3.org/2000/svg" width="55" height="52" viewBox="0 0 55 52" fill="red">

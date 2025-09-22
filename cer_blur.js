@@ -13,13 +13,15 @@ export class CerBlur extends HTMLElement {
         .blur_light {
           width: 343px;
           height: 343px;
+          
           position: absolute;
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          
           border-radius: 50%;
           background: var(--primary-primary, #805BFF);
-          filter: blur(200px);
+          filter: blur(180px);
         }
       </style>
       
