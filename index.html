@@ -40,7 +40,9 @@
       top: 0;
       z-index: -2;
     }
-    .cer_blur{
+    .fixat{
+      position: sticky;
+      top: 0;
       z-index: -3;
     }
 
@@ -48,12 +50,16 @@
 </head>
 
 <body>
+    <div class="fixat">
+      <cer-blur ></cer-blur>
+      <airline-fly class="avioane"></airline-fly>
+    </div>
     <landing-header></landing-header>
     <main-logo></main-logo>
     <main-title></main-title>
     <mobsearch-card></mobsearch-card>
-    <airline-fly class="avioane"></airline-fly>
-    <cer-blur class="cer_blur"></cer-blur>
+
+
 
 <script
   type="module"
