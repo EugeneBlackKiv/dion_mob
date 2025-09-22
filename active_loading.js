@@ -9,8 +9,6 @@ export class ActiveLoad extends HTMLElement {
         width: 204px;
         align-items: center;
         gap: 2px;
-        /*border-radius: 8px;*/
-        /*overflow: hidden;*/
       }
       .point{
         width: 204px;
@@ -76,10 +74,6 @@ export class ActiveLoad extends HTMLElement {
           opacity: 0;
         }
       }
-
-      
-
-
 
       </style>
       

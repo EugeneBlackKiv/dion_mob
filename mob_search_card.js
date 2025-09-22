@@ -30,7 +30,7 @@ export class MobSearchCard extends HTMLElement {
           border: 1px solid var(--outline-outline-variant, #393939);
           background: var(--blur-2, rgba(48, 48, 48, 0.24));
           box-shadow: 0 6px 24px 0 var(--shadow-card-2, #1B1B1B);
-          backdrop-filter: blur(4px);
+          backdrop-filter: blur(2px);
           transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
         }
         .container_card:hover {

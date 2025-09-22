@@ -5,11 +5,13 @@ export class AirlineFly extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
 
-        .airline_fly_section{
-          display: flex;
+        .airline_fly_section {
           position: relative;
-          z-index: -10;
+          overflow: hidden; /* clips anything leaving the box */
+          width: 100vw;
+          height: 110vh;    /* or enough height for your planes */
         }
+
         .background_positioning{
           position: absolute;
           left: 50%;
@@ -19,7 +21,7 @@ export class AirlineFly extends HTMLElement {
         .container_avion_1{
           position: absolute;
           left: 50%;
-          top: -140px;
+          top: 420px;
           transform: translateX(-50%) ;          
         }
         .avion_1 {
@@ -33,7 +35,7 @@ export class AirlineFly extends HTMLElement {
         .container_avion_2{
           position: absolute;
           left: 50%;
-          top: -200px;
+          top: 500px;
           transform: translateX(-50%) ; 
         }        
         .avion_2 {
@@ -47,7 +49,7 @@ export class AirlineFly extends HTMLElement {
         .container_avion_3{
           position: absolute;
           left: 50%;
-          top: -200px;
+          top: 600px;
           transform: translateX(-50%) ; 
         }      
         .avion_3 {
@@ -61,7 +63,7 @@ export class AirlineFly extends HTMLElement {
         .container_avion_4{
           position: absolute;
           left: 50%;
-          top: -130px;
+          top: 580px;
           transform: translateX(-50%) ; 
         }
         .avion_4 {
@@ -75,7 +77,7 @@ export class AirlineFly extends HTMLElement {
         .container_avion_5{
           position: absolute;
           left: 50%;
-          top: -80px;
+          top: 600px;
           transform: translateX(-50%) ; 
         }        
         .avion_5{
@@ -90,7 +92,7 @@ export class AirlineFly extends HTMLElement {
         .container_avion_6{
           position: absolute;
           left: 50%;
-          top: 20px;
+          top: 700px;
           transform: translateX(-50%) ; 
         }
         .avion_6 {
@@ -105,7 +107,7 @@ export class AirlineFly extends HTMLElement {
         .container_avion_7{
           position: absolute;
           left: 50%;
-          top: 100px;
+          top: 800px;
           transform: translateX(-50%) ; 
         }      
         .avion_7 {
@@ -135,7 +137,7 @@ export class AirlineFly extends HTMLElement {
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, 50%);
           border-radius: 50%;
           background: var(--primary-primary, #805BFF);
           filter: blur(180px);
