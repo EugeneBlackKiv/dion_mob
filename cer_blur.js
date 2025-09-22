@@ -17,7 +17,7 @@ export class CerBlur extends HTMLElement {
           position: absolute;
           top: 50%;
           left: 50%;
-          transform: translate(-50%, -50%);
+          transform: translate(-50%, -80%);
           
           border-radius: 50%;
           background: var(--primary-primary, #805BFF);
