@@ -4,4 +4,5 @@ import './main_title.js'
 import './mob_search_card.js'
 import './cer_blur.js'
 import './airline_fly.js'
+import './plane_fly.js'
 
