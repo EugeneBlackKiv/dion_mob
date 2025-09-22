@@ -1,4 +1,5 @@
 import './active_search_animation.js'
+import './active_loading.js'
 
 export class MobSearchCard extends HTMLElement {
   constructor() {
@@ -104,7 +105,7 @@ export class MobSearchCard extends HTMLElement {
           fill: var(--surface-on-surface, #FFF);
         }
         .search_status{
-          display: flex;display: flex;
+          display: flex;
           padding: 8px 0;
           align-items: center;
           gap: 6px;
@@ -118,10 +119,28 @@ export class MobSearchCard extends HTMLElement {
           font-style: normal;
           font-weight: var(--weight-body-primary, 400);
           line-height: var(--line-height-body-b2, 16px); /* 114.286% */
-        }    
+        }
+        
+        .search_status_monitor{
+          display: flex;
+          padding: 2px 0;
+          align-items: center;
+          gap: 24px;
+          align-self: stretch;
+          
+          color: var(--primary-primary, #805BFF);
+
+          /* b2/prim */
+          font-family: var(--family-body-primary, Jost);
+          font-size: var(--size-body-b2, 14px);
+          font-style: normal;
+          font-weight: var(--weight-body-primary, 400);
+          line-height: var(--line-height-body-b2, 16px); /* 114.286% */
+        }
+           
         .search_status_active{
           display: flex;display: flex;
-          padding: 6px 0;
+          padding: 8px 0;
           align-items: center;
           gap: 24px;
           align-self: stretch;
@@ -253,7 +272,7 @@ export class MobSearchCard extends HTMLElement {
           </div>
           <div class="search_status_active">
             Active search
-            <active-search></active-search>
+            <active-load></active-load>
           </div>
         </div>
         <div class="container_card">
@@ -286,7 +305,7 @@ export class MobSearchCard extends HTMLElement {
           </div>
           <div class="search_status_active">
             Active search
-            <active-search></active-search>
+            <active-load></active-load>
           </div>
         </div>
         <div class="container_card">
@@ -357,18 +376,10 @@ export class MobSearchCard extends HTMLElement {
               
             </div>
           </div>
-          <div class="search_status">
-            <div class="load_container">
-              <svg class="load" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#paint0_angular_1044_2938_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.008 -0.008 0 9 9)"><foreignObject x="-1150" y="-1150" width="2300" height="2300"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(128, 91, 255, 0) 0deg,rgba(128, 91, 255, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M9 17V16.4C4.91309 16.4 1.6 13.0869 1.6 9H1H0.4C0.4 13.7496 4.25035 17.6 9 17.6V17ZM17 9H16.4C16.4 13.0869 13.0869 16.4 9 16.4V17V17.6C13.7496 17.6 17.6 13.7496 17.6 9H17ZM9 1V1.6C13.0869 1.6 16.4 4.91309 16.4 9H17H17.6C17.6 4.25035 13.7496 0.4 9 0.4V1ZM9 1V0.4C4.25035 0.4 0.4 4.25035 0.4 9H1H1.6C1.6 4.91309 4.91309 1.6 9 1.6V1Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:0.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:0.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:9.7971748206813428e-16,&#34;m01&#34;:-16.0,&#34;m02&#34;:17.0,&#34;m10&#34;:16.0,&#34;m11&#34;:9.7971748206813428e-16,&#34;m12&#34;:1.0},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
-              <defs>
-              <clipPath id="paint0_angular_1044_2938_clip_path"><path d="M9 17V16.4C4.91309 16.4 1.6 13.0869 1.6 9H1H0.4C0.4 13.7496 4.25035 17.6 9 17.6V17ZM17 9H16.4C16.4 13.0869 13.0869 16.4 9 16.4V17V17.6C13.7496 17.6 17.6 13.7496 17.6 9H17ZM9 1V1.6C13.0869 1.6 16.4 4.91309 16.4 9H17H17.6C17.6 4.25035 13.7496 0.4 9 0.4V1ZM9 1V0.4C4.25035 0.4 0.4 4.25035 0.4 9H1H1.6C1.6 4.91309 4.91309 1.6 9 1.6V1Z"/></clipPath></defs>
-              </svg>
-              <svg class="load_logo" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M5.38694 1.97526C5.63933 1.47049 6.35916 1.47049 6.61155 1.97526L10.3784 9.50896C10.606 9.96432 10.2752 10.4999 9.76609 10.4999H2.2324L2.13938 10.4941C1.68416 10.4337 1.40662 9.93595 1.62009 9.50896L5.38694 1.97526ZM2.5803 9.59978H9.41819L5.99924 2.76262L2.5803 9.59978Z" fill="#805BFF"/>
-              </svg>
-            </div>             
-            Continue monitoring...
+          <div class="search_status_monitor"> 
+            Continue <br>
+            monitoring...
+             <active-search></active-search>
           </div>
         </div>
         <div class="container_card">
@@ -399,18 +410,10 @@ export class MobSearchCard extends HTMLElement {
               
             </div>
           </div>
-          <div class="search_status">
-            <div class="load_container">
-              <svg class="load" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g clip-path="url(#paint0_angular_1044_2938_clip_path)" data-figma-skip-parse="true"><g transform="matrix(0 0.008 -0.008 0 9 9)"><foreignObject x="-1150" y="-1150" width="2300" height="2300"><div xmlns="http://www.w3.org/1999/xhtml" style="background:conic-gradient(from 90deg,rgba(128, 91, 255, 0) 0deg,rgba(128, 91, 255, 1) 360deg);height:100%;width:100%;opacity:1"></div></foreignObject></g></g><path d="M9 17V16.4C4.91309 16.4 1.6 13.0869 1.6 9H1H0.4C0.4 13.7496 4.25035 17.6 9 17.6V17ZM17 9H16.4C16.4 13.0869 13.0869 16.4 9 16.4V17V17.6C13.7496 17.6 17.6 13.7496 17.6 9H17ZM9 1V1.6C13.0869 1.6 16.4 4.91309 16.4 9H17H17.6C17.6 4.25035 13.7496 0.4 9 0.4V1ZM9 1V0.4C4.25035 0.4 0.4 4.25035 0.4 9H1H1.6C1.6 4.91309 4.91309 1.6 9 1.6V1Z" data-figma-gradient-fill="{&#34;type&#34;:&#34;GRADIENT_ANGULAR&#34;,&#34;stops&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:0.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;stopsVar&#34;:[{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:0.0},&#34;position&#34;:0.0},{&#34;color&#34;:{&#34;r&#34;:0.50196081399917603,&#34;g&#34;:0.35686275362968445,&#34;b&#34;:1.0,&#34;a&#34;:1.0},&#34;position&#34;:1.0}],&#34;transform&#34;:{&#34;m00&#34;:9.7971748206813428e-16,&#34;m01&#34;:-16.0,&#34;m02&#34;:17.0,&#34;m10&#34;:16.0,&#34;m11&#34;:9.7971748206813428e-16,&#34;m12&#34;:1.0},&#34;opacity&#34;:1.0,&#34;blendMode&#34;:&#34;NORMAL&#34;,&#34;visible&#34;:true}"/>
-              <defs>
-              <clipPath id="paint0_angular_1044_2938_clip_path"><path d="M9 17V16.4C4.91309 16.4 1.6 13.0869 1.6 9H1H0.4C0.4 13.7496 4.25035 17.6 9 17.6V17ZM17 9H16.4C16.4 13.0869 13.0869 16.4 9 16.4V17V17.6C13.7496 17.6 17.6 13.7496 17.6 9H17ZM9 1V1.6C13.0869 1.6 16.4 4.91309 16.4 9H17H17.6C17.6 4.25035 13.7496 0.4 9 0.4V1ZM9 1V0.4C4.25035 0.4 0.4 4.25035 0.4 9H1H1.6C1.6 4.91309 4.91309 1.6 9 1.6V1Z"/></clipPath></defs>
-              </svg>
-              <svg class="load_logo" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                <path d="M5.38694 1.97526C5.63933 1.47049 6.35916 1.47049 6.61155 1.97526L10.3784 9.50896C10.606 9.96432 10.2752 10.4999 9.76609 10.4999H2.2324L2.13938 10.4941C1.68416 10.4337 1.40662 9.93595 1.62009 9.50896L5.38694 1.97526ZM2.5803 9.59978H9.41819L5.99924 2.76262L2.5803 9.59978Z" fill="#805BFF"/>
-              </svg>
-            </div>             
-            Continue monitoring...
+          <div class="search_status_monitor"> 
+            Continue <br>
+            monitoring...
+             <active-search></active-search>
           </div>
         </div>          
       </div>
