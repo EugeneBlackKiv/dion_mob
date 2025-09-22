@@ -11,7 +11,7 @@ export class MobSearchCard extends HTMLElement {
       <style>
         .lista_carduri{
         display: flex;
-        padding: 8px 16px;
+        padding: 8px 16px 32px 16px;
         flex-direction: column;
         align-items: flex-start;
         gap: 12px;
