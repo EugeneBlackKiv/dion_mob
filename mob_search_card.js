@@ -123,9 +123,9 @@ export class MobSearchCard extends HTMLElement {
         
         .search_status_monitor{
           display: flex;
-          padding: 2px 0;
+          padding: 8px 0;
           align-items: center;
-          gap: 24px;
+          gap: 16px;
           align-self: stretch;
           
           color: var(--primary-primary, #805BFF);
@@ -377,8 +377,7 @@ export class MobSearchCard extends HTMLElement {
             </div>
           </div>
           <div class="search_status_monitor"> 
-            Continue <br>
-            monitoring...
+            Continue monitoring
              <active-search></active-search>
           </div>
         </div>
@@ -411,8 +410,7 @@ export class MobSearchCard extends HTMLElement {
             </div>
           </div>
           <div class="search_status_monitor"> 
-            Continue <br>
-            monitoring...
+            Continue monitoring
              <active-search></active-search>
           </div>
         </div>          

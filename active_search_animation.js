@@ -7,8 +7,10 @@ export class ActiveSearch extends HTMLElement {
       <style>
         .container {
           display: flex;
-          width: 204px;
-          height: 20px;
+          width: 172px;
+          height: 12px;
+          /*width: 204px;*/
+          /*height: 20px;*/
           align-items: flex-start;
           align-content: flex-start;
           gap: 4px;
@@ -58,64 +60,64 @@ export class ActiveSearch extends HTMLElement {
         <div class="dot large"></div>
         <div class="dot small"></div>
         <div class="dot large"></div>
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        -->
+        <div class="dot small"></div>
+        <div class="dot small"></div>
+        <div class="dot large"></div>
+        <div class="dot small"></div>
+        <div class="dot large"></div>
+        <div class="dot large"></div>
         <div class="dot large"></div>
         <div class="dot small"></div>
         <div class="dot large"></div>
         <div class="dot small"></div>
+        <div class="dot small"></div>
+        <div class="dot small"></div>
+        <div class="dot large"></div>
+        <div class="dot small"></div>
+        <div class="dot small"></div>
+        <div class="dot large"></div>
+        <div class="dot small"></div>
+        <div class="dot large"></div>
+        <div class="dot large"></div>
+        <div class="dot small"></div>
+        <div class="dot large"></div>
+        <div class="dot small"></div>
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
         
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot large"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot large"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
-        <div class="dot small"></div>
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot large"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
+<!--        <div class="dot small"></div>-->
 
       </div>
     `;
